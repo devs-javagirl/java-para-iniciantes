@@ -1,6 +1,6 @@
 package cap1;
 
-public class Exemplo3 {
+public class Exemplo3Double {
     public static void main(String args[]) {
         int var; // essa instrução declara uma variável int
         double x; // essa instrução declara uma variável de ponto flutuante
