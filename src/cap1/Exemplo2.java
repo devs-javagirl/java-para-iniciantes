@@ -14,6 +14,7 @@ public class Exemplo2 {
         var2 = var1 / 2;
 
         System.out.print("var2 resultado: ");
+
         System.out.println(var2);
 
 
