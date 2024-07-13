@@ -1,6 +1,6 @@
 package cap2;
 
-public class Parede {
+public class ParedeDesafioExtra {
 
     public static void main(String[] args) {
         double eco = 10.5;
