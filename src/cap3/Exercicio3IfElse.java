@@ -1,6 +1,6 @@
 package cap3;
 
-public class Ex3IfElse {
+public class Exercicio3IfElse {
     public static void main(String[] args) {
         int x = 1, y = 0, z = 0;
         boolean done = true;

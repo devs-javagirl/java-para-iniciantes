@@ -1,6 +1,6 @@
 package cap3;
 
-public class Ex1Spaces {
+public class Exercicio1Spaces {
     public static void main(String args[])
             throws java.io.IOException {
         char ch;

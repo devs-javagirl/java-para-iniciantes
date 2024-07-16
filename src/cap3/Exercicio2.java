@@ -1,6 +1,6 @@
 package cap3;
 
-public class Ex2 {
+public class Exercicio2 {
     /*
     if(condição)
         instrução;
