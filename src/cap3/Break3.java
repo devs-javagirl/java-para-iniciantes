@@ -9,8 +9,10 @@ class Break3 {
 
             int t = 0;
             while(t < 100) {
-                if(t == 10)
+                if(t == 10){
                     break; // encerra o laço se t is 10
+                }
+
                 System.out.print(t + " ");
                 t++;
             }

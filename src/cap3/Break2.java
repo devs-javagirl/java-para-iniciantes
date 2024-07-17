@@ -6,7 +6,7 @@ class Break2 {
             throws java.io.IOException {
         char ch;
 
-        for (; ; ) {  // Esse laco ?infinito? eh encerrado por break.
+        for (; ; ) {  // Esse laco infinito eh encerrado por break.
             ch = (char) System.in.read(); // obtém um char
             if (ch == 'q')
                 break;

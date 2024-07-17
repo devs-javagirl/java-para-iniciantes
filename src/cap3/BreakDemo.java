@@ -10,7 +10,6 @@ class BreakDemo {
             if(i*i >= num){
                 break; // encerra o laço se i*i >= 100
             }
-
             System.out.print(i + " ");
         }
         System.out.println("Loop complete.");

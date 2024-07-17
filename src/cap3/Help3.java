@@ -15,6 +15,7 @@ public class Help3 {
                 System.out.println(" 5. do-while");
                 System.out.println(" 6. break");
                 System.out.println(" 7. continue\n");
+                System.out.println(" q. para finalizar\n");
                 System.out.print("Choose one: ");
 
                 choice = (char) System.in.read();
