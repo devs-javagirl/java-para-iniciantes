@@ -8,9 +8,11 @@ public class VehicleDemo {
         minivan.passengers = 7;
         minivan.fuelcap = 16;
         minivan.mpg = 21;
+
         // calcula a autonomia presumindo um tanque cheio de gasolina
-        range = minivan.fuelcap * minivan.mpg;
+        //range = minivan.fuelcap * minivan.mpg;
+
         System.out.println("Minivan can carry " + minivan.passengers +
-                " with a range of " + range);
+                " with a range of " + minivan.range() + " miles" + " and needs " + minivan.fuelneeded(252) + " gallons of fuel to cover 252 miles." );
     }
 }
