@@ -1,6 +1,8 @@
 package cap3;
 
-class Help {
+class
+
+Help {
     public static void main(String args[])
             throws java.io.IOException {
         char choice;
