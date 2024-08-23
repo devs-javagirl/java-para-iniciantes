@@ -1,12 +1,11 @@
 package cap5;
 
-class Ragged {
-    public static void main(String[] args) {
-        // Declaração do array multidimensional com primeira dimensão de tamanho 7
-        int riders[][] = new int[7][];
 
-        // Alocação manual das segundas dimensões
-        riders[0] = new int[10]; // Semana, 10 viagens
+public class Ragged { //irregular
+    public static void main(String args[]) {
+        int riders[][] = new int[7][];
+        //Aqui as segundas dimensoes tem 10 elementos.
+        riders[0] = new int[10];
         riders[1] = new int[10];
         riders[2] = new int[10];
         riders[3] = new int[10];
@@ -14,7 +13,7 @@ class Ragged {
         riders[5] = new int[2];  // Fim de semana, 2 viagens
         riders[6] = new int[2];
 
-        // Populando os arrays com dados fictícios
+        // Populando os arrays com dados fictÃ­cios
         for (int i = 0; i < 5; i++) { // Dados para os dias da semana
             for (int j = 0; j < 10; j++) {
                 riders[i][j] = i + j + 10;
@@ -45,4 +44,3 @@ class Ragged {
         }
     }
 }
-
