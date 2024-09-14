@@ -15,7 +15,7 @@ class Summation {
     }
 }
 
-class SumDemo {
+class SumDemo1 {
     public static void main(String args[]) {
         Summation s1 = new Summation(5);
         Summation s2 = new Summation(s1);
