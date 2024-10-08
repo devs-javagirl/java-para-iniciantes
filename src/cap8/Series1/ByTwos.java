@@ -29,4 +29,11 @@ public class ByTwos implements Series {
         return prev;
     }
 
+    public int[] getNextArray(int n){
+        int[] vals = new int[n];
+        System.out.println("getNextArray");
+        return vals;
+
+    }
+
 }
