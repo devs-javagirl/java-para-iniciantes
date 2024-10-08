@@ -1,4 +1,4 @@
-package cap7;
+package cap6;
 
 public class VarArgs {
 

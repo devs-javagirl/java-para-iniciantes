@@ -1,4 +1,4 @@
-package cap7;
+package cap6;
 
 // Retorna um objeto definido pelo programador.
 class Err {

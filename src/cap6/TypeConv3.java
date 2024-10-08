@@ -1,4 +1,4 @@
-package cap7;
+package cap6;
 
 // Adiciona f(byte).
 class Overload3 {
