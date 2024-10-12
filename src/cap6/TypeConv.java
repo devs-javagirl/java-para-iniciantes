@@ -1,4 +1,4 @@
-package cap7;
+package cap6;
 
 /* Conversões de tipo automáticas podem afetar
   a definição do método sobrecarregado.

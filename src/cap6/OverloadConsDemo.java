@@ -1,21 +1,21 @@
-package cap7;
+package cap6;
 
-class MyClass{
+class MyClass1{
     int x;
-    MyClass() {
+    MyClass1() {
         System.out.println("Inside MyClass().");
         x = 0;
     }
     //Constroi objetos de várias maneiras
-    MyClass(int i) {
+    MyClass1(int i) {
         System.out.println("Inside MyClass(int).");
         x = i;
     }
-    MyClass(double d) {
+    MyClass1(double d) {
         System.out.println("Inside MyClass(double).");
         x = (int) d;
     }
-    MyClass(int i, int j) {
+    MyClass1(int i, int j) {
         System.out.println("Inside MyClass(int, int).");
         x = i * j;
     }
@@ -23,10 +23,10 @@ class MyClass{
 class OverloadConsDemo {
 
     public static void main(String args[]) {
-        MyClass t1 = new MyClass();
-        MyClass t2 = new MyClass(88);
-        MyClass t3 = new MyClass(17.23);
-        MyClass t4 = new MyClass(2, 4);
+        MyClass1 t1 = new MyClass1();
+        MyClass1 t2 = new MyClass1(88);
+        MyClass1 t3 = new MyClass1(17.23);
+        MyClass1 t4 = new MyClass1(2, 4);
 
         System.out.println("t1.x: " + t1.x);
         System.out.println("t2.x: " + t2.x);

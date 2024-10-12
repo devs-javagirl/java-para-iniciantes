@@ -1,17 +1,17 @@
-package cap7;
+package cap6;
 
 // Uma classe de fila para caracteres.
-class Queue {
+class Queue2 {
     private char q[]; // esse array contem a fila
     private int putloc, getloc; // os indices put e get
 
     // Constroi uma fila vazia dado seu tamanho.
-    Queue(int size) {
+    Queue2(int size) {
         q = new char[size]; // aloca mem�ria para a fila
         putloc = getloc = 0;
     }
     // Constroi uma fila a partir de outra.
-    Queue(Queue ob) {
+    Queue2(Queue2 ob) {
         putloc = ob.putloc;
         getloc = ob.getloc;
         q = new char[ob.q.length];
@@ -20,7 +20,7 @@ class Queue {
             q[i] = ob.q[i];
     }
     // Constroi uma fila com valores iniciais.
-    Queue(char a[]) {
+    Queue2(char a[]) {
         putloc = 0;
         getloc = 0;
         q = new char[a.length];
@@ -47,11 +47,11 @@ class Queue {
 class QDemo2 {
     public static void main(String args[]) {
         // constroi uma fila vazia para 10 elementos
-        Queue q1 = new Queue(10);
+        Queue2 q1 = new Queue2(10);
 
         char name[] = {'T', 'o', 'm'};
         // constroi uma fila a partir do array
-        Queue q2 = new Queue(name);
+        Queue2 q2 = new Queue2(name);
 
         char ch;
         int i;
@@ -60,7 +60,7 @@ class QDemo2 {
             q1.put((char) ('A' + i)); //letra A + i
 
         // constroi uma fila a partir de outra
-        Queue q3 = new Queue(q1);
+        Queue2 q3 = new Queue2(q1);
         // Exibe as filas.
         System.out.print("Contents of q1: ");
         for(i=0; i < 10; i++) {
