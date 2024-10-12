@@ -1,7 +1,7 @@
-package cap8.queue;
+package cap8.queue.qpack;
 
 //Fila circular.
-class CircularQueue implements ICharQ {
+public class CircularQueue implements ICharQ {
     private char q[]; // esse array contém a fila
     private int putloc, getloc; // os índices put e get
 

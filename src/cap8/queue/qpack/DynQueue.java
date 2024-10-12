@@ -1,7 +1,7 @@
-package cap8.queue;
+package cap8.queue.qpack;
 
 // Fila dinâmica.
-class DynQueue implements ICharQ {
+public class DynQueue implements ICharQ {
     private char q[]; // esse array contém a fila
     private int putloc, getloc; // os indices put e get
     // Constrói uma fila vazia dado seu tamanho.

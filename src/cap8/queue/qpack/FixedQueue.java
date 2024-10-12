@@ -1,6 +1,6 @@
-package cap8.queue;
+package cap8.queue.qpack;
 
-class FixedQueue implements ICharQ {
+public class FixedQueue implements ICharQ {
     private char q[]; // esse array contém a fila
     private int putloc, getloc; // os indices put e get
 
