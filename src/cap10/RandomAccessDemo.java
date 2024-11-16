@@ -40,5 +40,11 @@ class RandomAccessDemo {
         } catch(IOException exc) {
             System.out.println("Erro de I/O: " + exc);
         }
+
+        //CONVERTER DOUBLE EM BINARIO
+        double valor = 10.5;
+        long bits = Double.doubleToLongBits(valor);
+        String binario = Long.toBinaryString(bits);
+        System.out.println("\nValor: " + valor + " - Binário: " + binario);
     }
 }
