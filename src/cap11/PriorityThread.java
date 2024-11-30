@@ -15,6 +15,7 @@ class PriorityThread implements Runnable {
     }
 
     // Define o comportamento da thread
+
     public void run() {
         System.out.println(thrd.getName() + " starting.");
         do {
@@ -23,11 +24,15 @@ class PriorityThread implements Runnable {
                 currentName = thrd.getName();
                 System.out.println("In " + currentName);
             }
-        } while (!stop && count < 10000000);
+        } while (!stop && count < 10);
         stop = true; // Interrompe outras threads ao alcançar 10.000.000
         System.out.println("\n" + thrd.getName() + " terminating.");
     }
+
+
 }
+
+
 
 class PriorityDemo {
     public static void main(String args[]) {
@@ -36,8 +41,8 @@ class PriorityDemo {
         PriorityThread lowPriority = new PriorityThread("Low Priority");
 
         // Configura as prioridades
-        highPriority.thrd.setPriority(Thread.MIN_PRIORITY); // Alta prioridade 7
-        lowPriority.thrd.setPriority(Thread.MAX_PRIORITY); // Baixa prioridade 3
+        highPriority.thrd.setPriority(Thread.NORM_PRIORITY+2); // Alta prioridade 7
+        lowPriority.thrd.setPriority(Thread.MIN_PRIORITY+2); // Baixa prioridade 3
 
         // Inicia as threads
         highPriority.thrd.start();
