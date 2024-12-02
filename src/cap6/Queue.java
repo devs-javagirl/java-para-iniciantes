@@ -21,7 +21,7 @@ class Queue {
     }
 
     // Obtém um caractere da fila.
-    char get() {
+     synchronized char get() {
         if(getloc == putloc) {
             System.out.println(" ? Queue is empty.");
             return (char) 0;
