@@ -1,7 +1,7 @@
 package cap11;
 
 // Faz a classe TickTock marcar realmente o tempo.
-class TickTock {
+class TickTock2 {
     String state; // contém o estado do relógio
 
     synchronized void tick(boolean running) {
