@@ -1,4 +1,4 @@
-package cap12;
+package cap13;
 
 class Gen<T> {
     T ob; // Objeto do tipo T
