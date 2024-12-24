@@ -23,7 +23,7 @@ class X extends Y {
 
 public class WildcardSuper {
     static void addToList(List<? super Y> list) {
-        // Posso adicionar objetos de Y ou subclasses de Y
+        // Posso adicionar objetos de Y ou superclasse de Y
         list.add(new Y());
         list.add(new X());
     }
