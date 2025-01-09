@@ -4,7 +4,7 @@ package cap13;
 class NumericFns3<T extends Number> {
     T num;
     // Passa para o construtor uma referência
-// a um objeto numérico.
+    // a um objeto numérico.
     NumericFns3(T n) {
         num = n;
     }
