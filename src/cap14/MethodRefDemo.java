@@ -10,6 +10,8 @@ interface IntPredicate {
 // Esta classe define três métodos estáticos que verificam um inteiro
 // em relação a alguma condição.
 class MyIntPredicates {
+    static int num = 9;
+
     // Um método estático que retorna true quando um número é primo.
     //numero primo é quando o numero é divisível por 1 e por ele mesmo.
     static boolean isPrime(int n) {
@@ -31,6 +33,15 @@ class MyIntPredicates {
     // Um método estático que retorna true quando um número é positivo.
     static boolean isPositive(int n) {
         return n > 0;
+    }
+
+    static boolean hasCommonFactor(int n) {
+        //fator de num e  n em comum
+        for(int i=2; i <= n/i; i++) {
+            if((n % i) == 0 && (num % i) == 0)
+                return true;
+        }
+        return false;
     }
 }
 
@@ -59,5 +70,9 @@ class MethodRefDemo {
         result = numTest(MyIntPredicates::isPositive, 11);
         if(result)
             System.out.println("11 is positive.");
+
+        result = numTest(MyIntPredicates::hasCommonFactor, 16);
+        if(result)
+            System.out.println("Fator em comum.");
     }
 }

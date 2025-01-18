@@ -12,6 +12,7 @@ class LambdaArgumentDemo {
     public static void main(String args[]) {
         String inStr = "Lambda Expressions Expand Java";
         String outStr;
+        String trimStr;
         System.out.println("Here is input string: " + inStr);
 
         // Expressão lambda para inverter a string
@@ -44,5 +45,10 @@ class LambdaArgumentDemo {
             return result;
         }, inStr);
         System.out.println("The string in reversed case: " + outStr);
+
+        // Expressão lambda para substituir espaços por hífens
+        trimStr = changeStr((str) -> str.replaceAll(" ",""), inStr);
+        System.out.println("The string with spaces trim: " + trimStr);
+
     }
 }
