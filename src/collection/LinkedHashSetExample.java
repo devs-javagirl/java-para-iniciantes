@@ -5,12 +5,12 @@ import java.util.Set;
 public class LinkedHashSetExample {
     public static void main(String[] args) {
         Set<String> set = new LinkedHashSet<>();
-        set.add("Maçã");
+        set.add("MaÃ§Ã£");
         set.add("Banana");
         set.add("Laranja");
-        set.add("Maçã");//nao adiciona repetido também
+        set.add("MaÃ§Ã£");//nao adiciona repetido tambÃ©m
         set.add("Banana");
         set.add("Abacaxi");
-        System.out.println(set); // Ordem de inserção preservada
+        System.out.println(set); // Ordem de inserÃ§Ã£o preservada
     }
 }

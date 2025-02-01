@@ -10,11 +10,11 @@ public class HashSetMetodos {
         numbers.add(20);
         numbers.add(30);
         if (numbers.contains(20)) {
-            System.out.println("O conjunto contém o número 20");
+            System.out.println("O conjunto contÃ©m o nÃºmero 20");
         }
         numbers.remove(30);
         System.out.println("Tamanho da lista: " + numbers.size());
 
-        numbers.forEach(n -> System.out.println("Número: " + n));
+        numbers.forEach(n -> System.out.println("NÃºmero: " + n));
     }
 }
